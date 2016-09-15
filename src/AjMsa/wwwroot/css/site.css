@@ -1,0 +1,66 @@
+body {
+  background-image: url("noisy_net.png");
+  color: #c0c0c0;
+  font-family: sans-serif, Arial, Helvetica; }
+
+.main-container {
+  display: flex;
+  /* establish flex container */
+  flex-direction: column;
+  /* make main axis vertical */
+  align-items: center;
+  /* center items horizontally, in this case */ }
+
+.member-template * {
+  width: 100px;
+  display: inline-block; }
+
+.level {
+  padding-left: 5px;
+  width: 50px; }
+
+.class-display-container {
+  vertical-align: top;
+  height: 100px; }
+
+.classes {
+  vertical-align: top;
+  width: 150px;
+  cursor: pointer; }
+
+.spec-specific {
+  width: 150px; }
+
+.class-display-container * {
+  display: inline-block; }
+
+.classSpec {
+  width: auto; }
+
+#search-form-submit {
+  cursor: pointer; }
+
+#information-container {
+  text-align: center; }
+
+#enter-guild-information {
+  height: 30px; }
+
+#member-header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  height: 50px; }
+
+div.hidden {
+  display: none; }
+
+/*
+.charName
+
+
+.level
+
+
+.classSpec
+*/

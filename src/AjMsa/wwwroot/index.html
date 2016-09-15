@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/site.css"  rel="stylesheet" />
+</head>
+<body>
+    <div class="main-container">
+
+        <div id="title"><h1>
+           World of Warcraft Guild Info
+            </h1>
+        </div>
+        <div id="information-container">
+
+            <p>With this tool you can gather information on guilds<b> in the US</b>, their members and their specializations. Below are some example guilds to search: </p>
+            
+                <p><i>Illidan - Limit <br /></i>
+                <i>Frostmourne - Entropy<br /></i>
+                <i>Frostmourne - Speed<br /></i>
+                <i>Stormrage - Vodka<br /></i>
+                <i>Barthilas - Ascension<br /></i>
+                <i>Sargeras - Midwinter</i></p>
+            
+            <div id="enter-guild-information">Enter a guild here: </div>
+        </div>
+
+
+
+
+        <form id="search-form">
+            <label>Realm Name: </label><input id="search-form-realm" value="Illidan" />
+            <label>Guild Name: </label> <input id="search-form-guild" value="Limit" />
+<!--             Region: 
+           <select id="select-region">
+                <option value="en_US">US</option>
+                <option value="en_GB">EU</option>
+                <option value="zh_TW">TW</option>
+                <option value="ko_KR">KR</option>
+            </select>   -->
+            <button id="search-form-submit" type="button">Search</button>
+        </form>
+
+        <br />
+
+        <h1 id="guild-name"></h1>
+        <div id ="hider" class="hidden">
+        <div class="class-display-container" >
+            <div class="classes">
+                Warrior: <span id="Warrior"></span>
+                <div class="specs">
+                    <div class="spec-specific">Protection: <span id="Protection_Warrior">0</span> </div>
+                    <div class="spec-specific">Arms: <span id="Arms_Warrior"></span></div>
+                    <div class="spec-specific">Fury: <span id="Fury_Warrior"></span></div>
+                    <br />
+                </div>    
+            </div>
+
+            <div class="classes">Paladin: <span id="Paladin"></span>
+                <div class="specs">
+                    <div class="spec-specific">Protection: <span id="Protection_Paladin"></span></div>
+                    <div class="spec-specific">Retribution: <span id="Retribution_Paladin"></span></div>
+                    <div class="spec-specific">Holy: <span id="Holy_Paladin"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Hunter: <span id="Hunter"></span>
+                <div class="specs">
+                    <div class="spec-specific">Marksmanship: <span id="Marksmanship_Hunter"></span></div>
+                    <div class="spec-specific">Beast Mastery:<span id="BeastMastery_Hunter"></span> </div>
+                    <div class="spec-specific">Survival: <span id="Survival_Hunter"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Rogue: <span id="Rogue"></span>
+                <div class="specs">
+                    <div class="spec-specific">Assasination: <span id="Assassination_Rogue"></span></div>
+                    <div class="spec-specific">Outlaw: <span id="Outlaw_Rogue"></span></div>
+                    <div class="spec-specific">Subtelty: <span id="Subtlety_Rogue"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Priest: <span id="Priest"></span>
+                <div class="specs">
+                    <div class="spec-specific">Disciplne: <span id="Discipline_Priest"></span></div>
+                    <div class="spec-specific">Holy: <span id="Holy_Priest"></span></div>
+                    <div class="spec-specific">Shadow: <span id="Shadow_Priest"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Death Knight: <span id="DeathKnight"></span>
+                <div class="specs">
+                    <div class="spec-specific">Blood: <span id="Blood_DeathKnight"></span></div>
+                    <div class="spec-specific">Frost: <span id="Frost_DeathKnight"></span></div>
+                    <div class="spec-specific">Unholy: <span id="Unholy_DeathKnight"></span></div>
+                    <br />
+                </div>   </div>
+       </div>
+       <div class="class-display-container">
+            <div class="classes">Shaman: <span id="Shaman"></span>
+                <div class="specs">
+                    <div class="spec-specific">Elemental: <span id="Elemental_Shaman"></span></div>
+                    <div class="spec-specific">Enhancement: <span id="Enhancement_Shaman"></span></div>
+                    <div class="spec-specific">Restoration: <span id="Restoration_Shaman"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Mage: <span id="Mage"></span>
+                <div class="specs">
+                    <div class="spec-specific">Arcane: <span id="Arcane_Mage"></span></div>
+                    <div class="spec-specific">Fire: <span id="Fire_Mage"></span></div>
+                    <div class="spec-specific">Frost: <span id="Frost_Mage"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Warlock: <span id="Warlock"></span>
+                <div class="specs">
+                    <div class="spec-specific">Affliction: <span id="Affliction_Warlock"></span></div>
+                    <div class="spec-specific">Demonology: <span id="Demonology_Warlock"></span></div>
+                    <div class="spec-specific">Destruction: <span id="Destruction_Warlock"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Monk: <span id="Monk"></span>
+                <div class="specs">
+                    <div class="spec-specific">Brewmaster: <span id="Brewmaster_Monk"></span></div>
+                    <div class="spec-specific">Mistweaver: <span id="Mistweaver_Monk"></span></div>
+                    <div class="spec-specific">Windwalker: <span id="Windwalker_Monk"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Druid: <span id="Druid"></span>
+                <div class="specs">
+                    <div class="spec-specific">Balance: <span id="Balance_Druid"></span></div>
+                    <div class="spec-specific">Feral: <span id="Feral_Druid"></span></div>
+                    <div class="spec-specific">Guardian: <span id="Guardian_Druid"></span></div>
+                    <div class="spec-specific">Restoration: <span id="Restoration_Druid"></span></div>
+                    <br />
+                </div>   </div>
+            <div class="classes">Demon Hunter: <span id="DemonHunter"></span>
+                <div class="specs">
+                    <div class="spec-specific">Havoc: <span id="Havoc_DemonHunter"></span></div>
+                    <div class="spec-specific">Vengeance: <span id="Vengeance_DemonHunter"></span></div>
+                </div>   </div>
+            </div>
+        </div>
+        <div id="members-container">
+            
+        </div>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="ts/main.js"></script>
+
+</body>
+</html>

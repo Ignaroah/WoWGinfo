@@ -1,0 +1,18 @@
+{
+	"version": "1.0.0",
+	"name": "asp.net",
+  "private": true,
+  "scripts": {
+    "start": "gulp serve --serve"
+  },
+  "dependencies": {
+    "jquery": "3.1.0" 
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-watch": "4.3.9",
+    "gulp-sass": "2.3.2",
+    "gulp-typescript": "2.13.6", 
+    "browser-sync": "2.3.2"
+  }
+}
